@@ -92,6 +92,7 @@ services:
       - CAPTCHA_LOGIN_ENABLED=true # 是否启用登录图形验证码，true 或 false 
 ```
 
+保存修改的 ‘compose.yml’ 后；别忘了执行启动命令： `docker compose up -d`  把所有docker启动起来
 ### 3. 添加反向代理站点
 
 服务启动后，在网站 - 反向代理，点击添加反代，域名设置你对外公开的域名，目标 url 填写本机地址 + compose 中的端口号，例如上面compose 对应的端口示例: http://127.0.0.1:12020 , 名称可以随意填写，例如 `airbuddy-security`，然后点击提交即可，如下所示:
